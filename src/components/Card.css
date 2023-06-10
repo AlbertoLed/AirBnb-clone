@@ -1,0 +1,29 @@
+.card {
+    min-width: 284px;
+    padding: 10px 10px;
+}
+.card__img {
+    width: 100%;
+    margin-bottom: 3px;
+}
+.card__stats {
+    display: flex;
+    align-items: center;
+}
+.stats__star {
+    transform: scale(1.4);
+    margin-right: 7px;
+}
+.card__text {
+    font-size: 1.1em;
+}
+.card__text--grey {
+    color: gray;
+}
+.card__text--bold {
+    font-size: 1em;
+    font-weight: 600;
+}
+.card__title, .card__stats {
+    margin-bottom: 5px;
+}

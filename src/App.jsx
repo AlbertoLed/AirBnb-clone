@@ -1,11 +1,32 @@
 import React from 'react'
 import './App.css'
+import Nav from './components/Nav.jsx'
+import Header from './components/Header.jsx'
+import Card from './components/Card.jsx'
+import data from './data.js'
 
 function App() {
+
+  const cards = data.map(item => 
+    <Card 
+      img={item.coverImg}
+      rating={item.stats.rating}
+      reviewCount={item.stats.reviewCount}
+      location={item.location}
+      title={item.title}
+      price={item.price}
+    />
+  )
+
+  console.log(data)
   return (
-    <main className='main'>
-      <h1>Hello</h1>
-    </main>
+    <>
+      <Nav />
+      <Header />
+      <div className='cards-list'>
+        {cards}
+      </div>
+    </>
   )
 }
 

@@ -1,5 +1,42 @@
-.main {
+
+/*
+    \\nav
+*/
+.nav {
+    padding: 25px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .1);
+}
+
+/*
+    \\HEADER
+*/
+.header {
+    background-color: var(#ffffff);
+}
+
+.header__photos {
+    max-width: 792px;
+    width: 80%;
+    align-self: center;
+}
+.content {
+    padding: var(--CONTENT-MARGIN);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+.header__text-box {
+    width: 480px
+}
+.header__title {
+    font-size: 3em;
+    margin-top: 40px;
+}
+.header__text {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
