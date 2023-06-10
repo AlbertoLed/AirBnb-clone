@@ -1,6 +1,15 @@
 .card {
     min-width: 284px;
     padding: 10px 10px;
+    position: relative;
+}
+.card__badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: var(--BG-WHITE);
 }
 .card__img {
     width: 100%;
