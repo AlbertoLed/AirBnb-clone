@@ -4,7 +4,7 @@ import photoGrid from '../../public/photo-grid.png'
 function Header () {
     return (
         <header className='header'>
-            <div className='content'>
+            <div className='header__content'>
                 <img className='header__photos' src={photoGrid} alt="Photos" />
                 <div className='header__text-box'>
                     <h1 className='header__title'>Online Experiences</h1>

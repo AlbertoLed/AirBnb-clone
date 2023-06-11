@@ -16,13 +16,13 @@ function App() {
 
   console.log(data)
   return (
-    <>
+    <div className='content'>
       <Nav />
       <Header />
       <div className='cards-list'>
         {cards}
       </div>
-    </>
+    </div>
   )
 }
 
