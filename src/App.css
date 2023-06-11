@@ -26,9 +26,6 @@
     display: flex;
     flex-direction: column;
 }
-.header__text-box {
-    width: 480px
-}
 .header__title {
     font-size: 3em;
     margin-top: 40px;
@@ -43,8 +40,14 @@
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
     overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+    .header__text-box {
+        width: 480px
+    }
 }
 
 @media (min-width: 890px) {
@@ -56,7 +59,5 @@
     .nav {
         align-self: stretch;
     }
-
-
 }
 
