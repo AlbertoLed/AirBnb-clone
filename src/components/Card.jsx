@@ -16,15 +16,15 @@ function Card(props) {
     return(
         <div className='card'>
             {badgeText && <div className='card__badge'>{badgeText}</div>}
-            <img className='card__img' src={`../../public/${coverImg}`} />
+            <img className='card__img' src={`./${coverImg}`} alt='card image' />
             <div className='card__stats margin'>
-                <img className='stats__star' src={starIcon} alt="star" />
+                <img className='stats__star' src={starIcon} alt='star' />
                 <p className='card__text'>{stats.rating}
                 </p>
                 <p className='card__text card__text--grey'>
                 {`(${stats.reviewCount}) •${location}`}</p>
             </div>
-            <p className='card__title card__text'>{title}</p>
+            <p className='card__title card__text'>{title}</p>git st
             <p className='card__text'><span className='card__text--bold'>From ${price}</span> / person</p>
         </div>
     )
